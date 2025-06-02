@@ -7,16 +7,16 @@
 }
 
 html, body{
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     background-color: black;
 }
 body{
     background:black url('../imagens/fundo-madeira.jpg') no-repeat top center;
     background-size: cover;
+    height: 100vh;
     
 }
-
 main{
     min-height: 100vh;
     background-color: transparent;
@@ -25,11 +25,22 @@ main{
     align-items: center;
     position: relative;
 }
+iframe#tela{
+    position:absolute;
+    top: 0;
+    left: 2.8%;
+    width: 97.4%;
+    height: 98.5%;
+    border: none;
+    border-radius: 28px;
+    
+}
 
 section#telefone{
     height: 40vw;
-    max-width: 400px;
+    width: (90vw, 400px);
     aspect-ratio: 603 / 1245;
     background: url('../imagens/frame-iphone.png') no-repeat;
     background-size: contain;
+    position: relative;
 }
